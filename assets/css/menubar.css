@@ -1,0 +1,130 @@
+@font-face { font-family: Monoton; src: url('assets/fonts/Monoton/Monoton-Regular.ttf'); } 
+@font-face { font-family: Glegoo; src: url('assets/fonts/Glegoo/Glegoo-Regular.ttf'); } 
+
+/* Remove margins and padding from the list, and add a background color */
+ul.leftnav {
+    text-align: center;
+    list-style-type: none;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    left: 0;
+    top: 0;
+    position: fixed;
+    overflow-x: hidden;
+    padding: 40px 5px;
+    height:100%;
+    margin: auto;
+    width: 5%;
+}
+
+
+/* Style the links inside the list items */
+ul.leftnav li a {
+    display: inline-block;
+    color: #2f416a;
+    padding: 25px 0px;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: Glegoo;
+}
+
+/* Change colour on hover */
+ul.leftnav li a:hover {color: #97a0b5;}
+
+/* Screen width styling for nav bar buttons */
+@media screen and (max-width: 600px) {
+ul.leftnav li a{
+  top: 30;
+  padding: 15px 0px;
+  overflow-x: hidden;
+}
+ul.leftnav{
+  padding: 0px 0px;
+}
+}
+
+/* Screen height styling for nav bar buttons */
+@media screen and (max-height: 300px) {
+ul.leftnav li a{
+  left: 0;
+  top: 20;
+  padding: 5px 0px;
+  overflow-x: hidden;
+}
+ul.leftnav{
+  padding: 5px 0px;
+}
+div.social_bar{
+  margin-top: 0px;
+}
+}
+
+/* Screen height styling for social buttons */
+@media screen and (max-height: 300px) {
+  div.social_bar li img{
+    left: 0;
+    padding: 5px 0px;
+    overflow-x: hidden;
+  }
+  div.social_bar li{
+    padding: 0px 0px;
+  }
+}
+
+/* Screen width styling for social buttons */
+@media screen and (max-width: 600px) {
+div.social_bar li img{
+  left: 0;
+  padding: 5px 0px;
+  overflow-x: hidden;
+}
+div.social_bar li{
+  padding: 0px 0px;
+}
+}
+
+/* Styling for social buttons */
+div.social_bar{
+  margin-top: 30px;
+  padding: 50px;
+  left:0;
+}
+
+/* Styling for Social buttons */
+div.social_bar {
+  padding: 0px;
+  margin-top: 40px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* Remove scrollbars */
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+div.social_bar li img{
+  width: 45%;
+}
+
+/* Separate end of nav menu and start of social buttons */
+li.last_button img{
+  margin-bottom: 30px;
+}
+
+#fb_icon:hover{
+  opacity: 0.5;
+}
+
+#twitter_icon:hover{
+  opacity: 0.5;
+}
+
+#linkedin_icon:hover{
+  opacity: 0.5;
+}
+
+#instagram_icon:hover{
+  opacity: 0.5;
+}

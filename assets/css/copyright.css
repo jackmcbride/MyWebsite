@@ -1,0 +1,13 @@
+div.copyright_label_wrapper{
+  bottom: 0;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+div.copyright_label_wrapper p{
+  font-family: Glegoo;
+  color: #ced8e8;
+  font-size: 1.1vw;
+}
