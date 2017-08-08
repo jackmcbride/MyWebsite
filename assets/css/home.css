@@ -1,52 +1,260 @@
 @font-face { font-family: Monoton; src: url('assets/fonts/Monoton/Monoton-Regular.ttf'); } 
 @font-face { font-family: Glegoo; src: url('assets/fonts/Glegoo/Glegoo-Regular.ttf'); } 
-@font-face { font-family: Glegoo-Bold; src: url('assets/fonts/Glegoo/Glegoo-Bold.ttf'); } 
+
+html,body {
+margin:0;
+padding:0;
+}
 
 div.content{
     margin: auto;
-    width: 45%;
+    width: 50%;
 }
 
-div.body>p.intro{
-    font-size: 1.4vw;
-    font-weight: bold;
-    text-align: center;
+@media screen and (max-device-width: 800px) {
+    div.content {
+        width:80%;
+    }
+    #about_me_pics{
+        width: 100%;
+    }
 }
 
-div.body>p.intro2{
-    font-size: 1vw;
-    font-weight: bold;
+@media only screen and (min-width: 1200px) {
+    div.content {
+        width:50%;
+    }
+    #about_me_pics{
+        width: 60%;
+    }
+}
+
+div.banner{
+    background-image: linear-gradient(
+      rgba(255, 0, 0, 0.15), 
+      rgba(255, 255, 255, 1.0)
+    ), url("../images/tarantula_nebula.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10.5em;
+    margin: 0;
+}
+
+ul.msc_modules{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.85em;
+}
+
+.caption_text{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+p.quote{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+div.img_div{
     text-align: center;
+    margin-bottom: 2em;
+}
+
+#about_me_pics{
     margin: auto;
+    border-radius: 8px;
+    border: #2f416a 0.05em solid;
+    padding: 0.3em;
 }
 
 div.body>p.intro_body{
     font-family: Glegoo;
     color: #2f416a;
-    font-size: 0.8vw;
-    display: inline-block;
+    font-size: 0.85em;
 }
 
-div.header{
+p.cv_body{
+    font-family: Glegoo;
+    color: #2f416a;
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+
+div.body>p.contact_body{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.85em;
     text-align: center;
-    padding: 40px 15px;
+}
+/* Gallery css */
+div.project_gallery{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 210px;
+    height: 210px;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    text-align: center;
+}
+div.desc {
+    padding: 0.5em;
+    text-align: center;
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.7em;
 }
 
-h1.title{
-    font-size: 3vw;
-    margin: auto;
+div.q_div{
+    margin-top: 2em;
+}
+
+.btn_primary{
+    background-color: #2f416a;
+    color: #FFFFFF;
+    font-family: Glegoo;
+    font-size: 1.2em;
+    padding: 0.7em;
+    border-radius: 8px;
+}
+
+.btn_primary:hover{
+    opacity: 0.5;
+}
+
+div.cv_div{
+    text-align: center;
+}
+
+div.project_gallery img{
+    width: 60%;
+    margin: 0.1em;
+}
+
+div.project_gallery:hover {
+    border: 1px solid #777;
+}
+
+.header{
+    margin-top: 7em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.header_home{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.header_home span{
+    font-family: Glegoo-Bold;
+    font-size: 3.2em;
+    color: #2f416a;
+}
+
+h1.qualification_title{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+ul.qualification_list{
+    font-family: Glegoo;
+    color: #2f416a;
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+
+h1.category_title{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 1em;
+    text-align: center;
+}
+
+h2.project_title{
+    font-family: Glegoo;
+    color: #2f416a;
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+
+p.project_description{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+div.git_div{
+    font-family: Glegoo;
+    color: #2f416a;
+    font-size: 0.85em;
+}
+
+.git_link{
+    text-align: center;
+}
+
+h2.subtitle{
+    font-family: Glegoo;
+    font-size: 1.2em;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    color: #97a0b4;
+    font-style: italic;
+    
+}
+
+h2.subtitle2{
+    font-family: Glegoo;
+    font-size: 1.2em;
+    color: #97a0b4;
+    text-align: center;
+}
+
+.header span{
+    font-family: Glegoo-Bold;
+    font-size: 3.2em;
+    color: #2f416a;
+}
+
+.typing_text{
     font-family: Glegoo;
     color: #2f416a;
 }
 
-h2.subheading{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 1.3vw;
+div.project_div{
+    padding: 1em;
+    margin-bottom: 3em;
+    box-shadow: 0em 0em 0em 0.05em rgba(47, 65, 106, 0.5); 
+    border-radius: 8px;
+}
+div.project_div{
+    text-align: center;
 }
 
-div.body>p{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 1vw;
+a.text_links{
+    text-decoration: none;
+    color: #97a0b4;
 }
+a.text_links:hover{
+    color: #2f416a;
+}
+
+a:hover{
+    opacity:1.0;
+}
+
