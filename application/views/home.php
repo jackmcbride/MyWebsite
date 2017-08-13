@@ -9,56 +9,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
         <?php include 'menubar.php';?>
-        <div class = "banner"></div>
+        <div class = "banner_home">
+            <h1 class = "home_title">Jack McBride</h1>
+            <span class = "typing_text"></span>
+        </div>
         <div class = "content">
-                <div class = "body">
-                    <div class = "header_home">
-                        <span class = "typing_text"></span> 
-                        <h2 class = "subtitle">Computer Scientist. Security Researcher. Programmer.</h2>
-                    </div>
-                    <script>
-                        $(function(){
-                            $(".typing_text").typed({
-                            strings: ["Jack McBride.",
-                            ],
-                            typeSpeed: 50,
-                            backDelay: 200,
-                            });
+            <div class = "header">
+                <script>
+                    $(function(){
+                        $(".typing_text").typed({
+                        strings: ["MSc Computer Science.",
+                        ],
+                        typeSpeed: 20,
+                        backDelay: 200,
                         });
-                    </script>
+                    });
+                </script>
+            </div>
+            <div class = "body">
+                <div class = "profile_div">
+                    <span class = "profile_pic"></span>
+                </div>
+                <h2 class = "subtitle2">Welcome!</h2>
+                <p class = "intro_body">
+                    Hello! Thank you for visiting my website. My name is Jack Lucas Gilmore McBride and I’m an MSc student in <a href = "https://www.kent.ac.uk/courses/postgraduate/246/advanced-computer-science#overview" class = "text_links">Advanced Computer Science</a>, at the <a class="text_links" href="https://www.kent.ac.uk/">University of Kent</a> in Canterbury. I studied my undergraduate in <a class = "text_links" href = https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence> BSc Computer Science with Artificial Intelligence </a> from 2013-2016, graduating with a first class degree with honours.
+                </p>
+                <p class = "intro_body">
+                    I'm passionate about Cybersecurity and Software Development, and have been an avid programmer for around 5 years. During this time, I've written programs in Java, C/C++ and Python, tried my hand at some of the more peculiar languages such as Erlang, and worked on a handful of web-based projects, such as this website. I've also taught Java to first year programming students at the University of Kent, during stage three of my undergraduate degree and throughout my masters. 
+                </p>
+                <p class = "intro_body">
+                    My MSc dissertation is based on a security analysis of the Contiki operating system. It involves using state-of-the-art static analysis tools to examine the source code for vulnerabilities, reporting on them, and providing patches. So far, we have raised over 30 issues, issued several patches and submitted two vulnerabilities to the CVE database.
+                </p>
+                <h2 class = "subtitle2">University Modules</h2>
+                    <ul class = "msc_modules">
+                        <li> <a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO871">Advanced Java &</a> <a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO889">C++ Programming</a></li>
+                        <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO899">System Security</a></li>
+                        <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO876">Computer Security</a></li>
+                        <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO892">Advanced Network Security</a></li>
+                        <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO834">Trust, Security and Privacy Management</a></li>
+                    </ul>
+                <h2 class = "subtitle2">Contact</h2>
+                <p class = "intro_body">
+                    You can reach me through my either my personal & academic email accounts:
+                <div class = "contact_field">
                     <p class = "intro_body">
-                    Hello! My name is Jack McBride, and I’m an Advanced Computer Science student at the <a class="text_links" href="https://www.kent.ac.uk/">University of Kent</a> in Canterbury. I studied undergraduate <a class = "text_links" href = https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence> BSc Computer Science with Artificial Intelligence </a> from 2013 to summer 2016, and graduated with a first class degree with honours. Since then, I have embarked on a Masters course in <a href = "https://www.kent.ac.uk/courses/postgraduate/246/advanced-computer-science#overview" class = "text_links">Advanced Computer Science</a>, and hope to graduate in September 2017.
-                    </p>
-                    <p class = "intro_body">
-                        I'm passionate about cybersecurity. My current interests in the field include system security, privacy, IoT security, cryptography and the dark web. I'm currently looking for employment in the areas of cybersecurity and ethical hacking, and would be very pleased to hear about graduate opportunities in the field!
-                    </p>
-                    <p class = "intro_body">
-                        My MSc dissertation is based on a security analysis of the Contiki operating system, which I am conducting in collaboration with the University of Bristol. My work involves using state-of-the-art static analysis tools to check the source code for vulnerabilities, and then providing patches whilst collaborating with other researchers. So far, we have raised over 30 issues, and submitted two vulnerabilities to the CVE database.
-                        <br>
-                        <br>
-                        My Advanced Computer Science MSc modules include:
-                    </p>
-                        <ul class = "msc_modules">
-                            <li> <a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO871">Advanced Java &</a> <a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO889">C++ Programming</a></li>
-                            <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO899">System Security</a></li>
-                            <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO876">Computer Security</a></li>
-                            <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO892">Advanced Network Security</a></li>
-                            <li><a class = "text_links" href = "https://www.kent.ac.uk/courses/modules/module/CO834">Trust, Security and Privacy Management</a></li>
-                        </ul>
-                        <br>
-                    <p class = "intro_body">
-                        Since starting my university education, I've been given the opportunity to conduct leading security research at a world class institution. During this time, I have worked on a variety of group projects, including my final year dissertation topic; for which we fully developed an IoT sound monitoring system for a real client. 
-                    </p>
-                    <p class = "intro_body">    
-                        To see my research publications, visit my profile on Research Gate <a class="text_links" href = "https://www.researchgate.net/profile/Jack_Mcbride3">here.</a>
-                    </p>
-                    <h2 class = "subtitle2">Contact</h2>
-                    <p class = "contact_body">
-                        You can reach me through my personal & academic email accounts:<br><br>
-                        Academic: <a class="text_links" href = "mailto:jlgm2@kent.ac.uk">jlgm2@kent.ac.uk</a><br>
-                        Personal: <a class="text_links" href = "mailto:warauthor@gmail.com">warauthor@gmail.com</a> 
+                        Academic Email:  <a class="text_links" href = "mailto:jlgm2@kent.ac.uk">jlgm2@kent.ac.uk</a><br>
+                        Personal Email:  <a class="text_links" href = "mailto:warauthor@gmail.com">warauthor@gmail.com</a> 
                     </p>
                 </div>
+                </p>
+            </div>
         </div>
         <?php include 'copyright.php';?> 
     </body>

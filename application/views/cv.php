@@ -9,31 +9,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
         <?php include 'menubar.php';?>
+        <div class = "banner_cv">
+            <h1 class = "title">Skills & CV</h1>
+            <span class = "typing_text"></span>
+        </div>
         <div class = "content"> 
             <div class = "header">
-                <span class = "typing_text"></span>
-                <h2 class = "subtitle">My skills and qualifications.</h2>
                 <script>
                     $(function(){
                         $(".typing_text").typed({
-                        strings: ["Skills & CV.", 
+                        strings: ["My qualifications.", 
                         ],
-                        typeSpeed: 50,
+                        typeSpeed: 20,
                         backDelay: 200,
                         });
                     });
                 </script>
             </div>
             <div class = "body">
+                <h2 class = "subtitle2">About</h2>
+                <p class = "intro_body">This page lists my current skills and qualifications to date. If you wish to access any of my transcripts, including degree certification, grades or results, please don't hesitate to contact me via email.</p>
                 <div class = "q_div">
-                    <h1 class = "qualification_title">University Qualifications: University of Kent (2013-2017)</h1>
+                    <h2 class = "subtitle2">University Degree</h2>
+                    <h2 class = "subtitle2">University of Kent (2013-2017)</h2>
+                    <p class = "intro_body">
+                        I was accepted into the University of Kent in 2013 with the scholarship of Academic Excellence, which was awarded to me based on my A-Level achievements. This granted me a small financial bursary each year I achieved a grade of 2:1 or above.
+                    </p>
                     <ul class = "qualification_list">
                         <li>MSc Advanced Computer Science</li>
                         <li>BSc Computer Science with Artificial Intelligence (First Class Honours)</li>
                     </ul>
                 </div>
-                <div class = "q_div"> 
-                    <h1 class = "qualification_title">College Qualifications: Borden Grammar School (2011-2013)</h1>
+                <div class = "q_div">
+                    <h2 class = "subtitle2">A-Levels</h2>
+                    <h2 class = "subtitle2">Borden Grammar School (2011-2013)</h2>
+                    <p class = "intro_body">
+                        I completed my A-Levels with Borden Grammar School in 2013, having been awarded the WA Claydon award for English Literature and Language, and the School Prize for Fine Art. 
+                    </p>
                     <ul class = "qualification_list">
                         <li>English Literature and Language (A*)</li>
                         <li>Fine Art (A*)</li>
@@ -41,14 +53,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <li>Psychology (B)</li>
                     </ul>
                 </div>
-                <div class = "q_div"> 
-                    <h1 class = "qualification_title">GSCE Qualifications: Borden Grammar School (2009-2011)</h1>
+                <div class = "q_div">
+                    <h2 class = "subtitle2">GCSE</h2>
+                    <h2 class = "subtitle2">Borden Grammar School (2009-2011)</h2>
                     <ul class = "qualification_list">
                         <li>13 A* - C qualifications including English, Mathematics and Sciences</li>
                     </ul>
                 </div>
                 <div class = "q_div"> 
-                    <h1 class = "qualification_title">Additional Qualifications</h1>
+                    <h2 class = "subtitle2">Miscellaneous</h2>
                     <ul class = "qualification_list">
                         <li>Jiu-Jitsu 4th Kyu (Purple Belt) TJJF</li>
                         <li>Full English Driving License</li>
@@ -56,9 +69,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </ul>
                 </div>
                 <div class = "cv_div">
-                    <br>
-                    <h1 class = "qualification_title">Curriculum Vitae</h1>
-                    <p class = "cv_body">If you are interested in downloading my CV, press the button below.</p>
+                    <h2 class = "subtitle2">Curriculum Vitae</h2>
+                    <p class = "intro_body">If you are interested in viewing my CV, press the button below to download a pdf.</p>
                     <br>
                     <a href="<?php echo base_url('assets/cv/j_mcbride_CV.pdf') ?>">
 							<button class="btn_primary" type="button">Download CV</button>

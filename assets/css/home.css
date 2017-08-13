@@ -1,5 +1,8 @@
-@font-face { font-family: Monoton; src: url('assets/fonts/Monoton/Monoton-Regular.ttf'); } 
-@font-face { font-family: Glegoo; src: url('assets/fonts/Glegoo/Glegoo-Regular.ttf'); } 
+@font-face { font-family: Roboto-Bold; src: url('../fonts/Roboto_Slab/RobotoSlab-Bold.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('../fonts/Roboto_Slab/RobotoSlab-Regular.ttf'); }  
+@font-face { font-family: Roboto-Light; src: url('../fonts/Roboto_Slab/RobotoSlab-Light.ttf'); }
+@font-face { font-family: Roboto-Thin; src: url('../fonts/Roboto_Slab/RobotoSlab-Thin.ttf'); } 
+
 
 html,body {
 margin:0;
@@ -11,53 +14,140 @@ div.content{
     width: 50%;
 }
 
-@media screen and (max-device-width: 800px) {
+div.topnav{
+    z-index: -1;
+}
+
+@media screen and (min-width: 400px) {
     div.content {
-        width:80%;
+        width:70%;
     }
     #about_me_pics{
-        width: 100%;
+        width: 95%;
+    }
+    div.profile_div{
+    padding-bottom: 0;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+
+@media screen and (max-width: 1000px) {
+    div.content {
+        width:74%;
+    }
+    #about_me_pics{
+        width: 95%;
+    }
+    div.profile_div{
+    padding-bottom: 0;
+    }
+    span.profile_pic{
+    background-size: 12em;
+    padding: 4em;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    div.content {
+        width:60%;
+    }
+    #about_me_pics{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     div.content {
         width:50%;
     }
     #about_me_pics{
-        width: 60%;
+        width: 65%;
     }
 }
 
-div.banner{
+@media screen and (min-width: 1500px) {
+    div.content {
+        width:42%;
+    }
+    #about_me_pics{
+        width: 65%;
+    }
+}
+
+div.banner_home{
     background-image: linear-gradient(
       rgba(255, 0, 0, 0.15), 
-      rgba(255, 255, 255, 1.0)
-    ), url("../images/tarantula_nebula.jpg");
+      rgba(255, 255, 255, 0.85)
+    ), url("../images/tarantula_nebula-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10.5em;
-    margin: 0;
+    padding: 5.2em;
+    text-align: center;
+}
+
+div.banner_blog{
+    background-image: linear-gradient(
+      rgba(255, 0, 0, 0.15), 
+      rgba(255, 255, 255, 0.85)
+    ), url("../images/cs3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5.2em;
+    text-align: center;
+}
+
+div.banner_projects{
+    background-image: linear-gradient(
+      rgba(60, 0, 250, 0.15), 
+      rgba(255, 255, 255, 0.85)
+    ), url("../images/arduino_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5.2em;
+    text-align: center;
+}
+
+div.banner_cv{
+    background-image: linear-gradient(
+      rgba(60, 0, 250, 0.15), 
+      rgba(255, 255, 255, 0.85)
+    ), url("../images/cs2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5.2em;
+    text-align: center;
+}
+
+div.banner_about{
+    background-image: linear-gradient(
+      rgba(255, 0, 0, 0.25), 
+      rgba(255, 255, 255, 0.85)
+    ), url("../images/guitar_banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5.2em;
+    text-align: center;
+}
+
+div.project_div{
+    padding: 0.5em;
+    margin-bottom: 3em;
 }
 
 ul.msc_modules{
-    font-family: Glegoo;
+    font-family: Roboto-Light;
     color: #2f416a;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 .caption_text{
-    font-family: Glegoo;
+    font-family: Roboto-Regular;
     color: #2f416a;
+    padding: 0.1em;
     font-size: 0.75em;
     font-style: italic;
-}
-
-p.quote{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 0.85em;
-    font-style: italic;
+    opacity: 0.8;
 }
 
 ::-webkit-scrollbar { 
@@ -71,179 +161,111 @@ div.img_div{
 
 #about_me_pics{
     margin: auto;
-    border-radius: 8px;
-    border: #2f416a 0.05em solid;
-    padding: 0.3em;
+    padding: 1em;
+    border-radius: 1.5em;
 }
 
-div.body>p.intro_body{
-    font-family: Glegoo;
+p.intro_body{
+    font-family: Roboto-Light;
     color: #2f416a;
-    font-size: 0.85em;
-}
-
-p.cv_body{
-    font-family: Glegoo;
-    color: #2f416a;
-    opacity: 0.5;
-    font-size: 0.9em;
-}
-
-div.body>p.contact_body{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 0.85em;
-    text-align: center;
-}
-/* Gallery css */
-div.project_gallery{
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 210px;
-    height: 210px;
-    margin-bottom: 1.5em;
-    overflow: hidden;
-    text-align: center;
-}
-div.desc {
-    padding: 0.5em;
-    text-align: center;
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 0.7em;
-}
-
-div.q_div{
-    margin-top: 2em;
+    font-size: 1em;
+    margin: 0.8em;
 }
 
 .btn_primary{
     background-color: #2f416a;
     color: #FFFFFF;
-    font-family: Glegoo;
+    font-family: Roboto-Regular;
     font-size: 1.2em;
-    padding: 0.7em;
+    padding: 0.85em;
     border-radius: 8px;
 }
 
 .btn_primary:hover{
-    opacity: 0.5;
+    background-color: #3580d6
 }
 
 div.cv_div{
     text-align: center;
 }
 
-div.project_gallery img{
-    width: 60%;
-    margin: 0.1em;
-}
-
-div.project_gallery:hover {
-    border: 1px solid #777;
-}
-
-.header{
-    margin-top: 7em;
-    margin-bottom: 1em;
+div.profile_div{
     text-align: center;
+    padding: 1.3em;
+    padding-bottom: 4em;
 }
 
-.header_home{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.header_home span{
-    font-family: Glegoo-Bold;
-    font-size: 3.2em;
-    color: #2f416a;
-}
-
-h1.qualification_title{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: center;
+span.profile_pic{
+    background-image: url('../images/me_profile_pic_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 9.2em;
+    padding: 4em;
+    border-radius: 50%;
+    border: 0.5em solid #FFFFFF;
+    background-position: center;
 }
 
 ul.qualification_list{
-    font-family: Glegoo;
+    font-family: Roboto-Regular;
     color: #2f416a;
-    opacity: 0.5;
-    font-size: 0.9em;
+    opacity: 0.7;
+    font-size: 0.95em;
 }
 
-h1.category_title{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 1em;
+div.contact_field{
     text-align: center;
-}
-
-h2.project_title{
-    font-family: Glegoo;
-    color: #2f416a;
-    opacity: 0.5;
-    font-size: 0.9em;
-}
-
-p.project_description{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 0.8em;
-    text-align: left;
-}
-
-div.git_div{
-    font-family: Glegoo;
-    color: #2f416a;
-    font-size: 0.85em;
-}
-
-.git_link{
-    text-align: center;
+    padding: 0.5em;
 }
 
 h2.subtitle{
-    font-family: Glegoo;
-    font-size: 1.2em;
+    font-family: Roboto-Light;
+    font-size: 1.6em;
     margin: 0.5em;
-    margin-bottom: 1em;
-    color: #97a0b4;
+    margin-bottom: 3em;
+    color: #2f416a;
     font-style: italic;
-    
 }
 
 h2.subtitle2{
-    font-family: Glegoo;
+    font-family: Roboto-Regular;
     font-size: 1.2em;
-    color: #97a0b4;
-    text-align: center;
-}
-
-.header span{
-    font-family: Glegoo-Bold;
-    font-size: 3.2em;
+    margin-left: 0.65em;
+    padding-top: 0.5em;
     color: #2f416a;
 }
 
-.typing_text{
-    font-family: Glegoo;
+h2.subtitle3{
+    font-family: Roboto-Regular;
+    font-size: 1.05em;
+    margin-left: 0.65em;
+    padding-top: 0.5em;
     color: #2f416a;
 }
 
-div.project_div{
-    padding: 1em;
-    margin-bottom: 3em;
-    box-shadow: 0em 0em 0em 0.05em rgba(47, 65, 106, 0.5); 
-    border-radius: 8px;
+h1.home_title{
+    font-family: Roboto-Bold;
+    font-size: 4.6em;
+    color: #FFFFFF;
+    padding-top: 0.5em;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
 }
-div.project_div{
-    text-align: center;
+
+h1.title{
+    font-family: Roboto-Bold;
+    font-size: 4.6em;
+    padding-top: 0.5em;
+    color: #FFFFFF;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
+}
+
+span.typing_text{
+    font-family: Roboto-Light;
+    font-size: 1.4em;
+    padding: 4em;
+    color: #FFFFFF;
+    font-style: italic;
 }
 
 a.text_links{
@@ -254,7 +276,14 @@ a.text_links:hover{
     color: #2f416a;
 }
 
-a:hover{
-    opacity:1.0;
+div.project_images{
+    text-align: center;
+    padding: 1em;
 }
 
+div.project_images img{
+    margin: 0.8em;
+    width: 12em;
+    border: 0.05em solid #2f416a;
+    border-radius: 0.5em;
+}
