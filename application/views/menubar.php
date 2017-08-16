@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html>
     <head>
-        <title>Menu Bar</title>
+        <title>Jack McBride</title>
         <link rel = "stylesheet" type="text/css" href = "<?php echo base_url('assets/css/menubar.css') ?>">
         <script src="<?php echo base_url('assets/js/menu.js') ?>"></script>
     </head>

@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     I'm passionate about Cybersecurity and Software Development, and have been an avid programmer for around 5 years. During this time, I've written programs in Java, C/C++ and Python, tried my hand at some of the more peculiar languages such as Erlang, and worked on a handful of web-based projects, such as this website. I've also taught Java to first year programming students at the University of Kent, during stage three of my undergraduate degree and throughout my masters. 
                 </p>
                 <p class = "intro_body">
-                    My MSc dissertation is based on a security analysis of the Contiki operating system. It involves using state-of-the-art static analysis tools to examine the source code for vulnerabilities, reporting on them, and providing patches. So far, we have raised over 30 issues, issued several patches and submitted two vulnerabilities to the CVE database.
+                    My MSc dissertation is based on a security analysis of the Contiki operating system. It involves using cutting edge static analysis tools to examine the source code for vulnerabilities, reporting on them, and providing fixes. So far, we have raised over 30 issues, issued several patches and submitted two vulnerabilities to the CVE database.
                 </p>
                 <h2 class = "subtitle2">University Modules</h2>
                     <ul class = "msc_modules">

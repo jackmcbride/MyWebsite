@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h2 class = "subtitle2">University Degree</h2>
                     <h2 class = "subtitle2">University of Kent (2013-2017)</h2>
                     <p class = "intro_body">
-                        I was accepted into the University of Kent in 2013 with the scholarship of Academic Excellence, which was awarded to me based on my A-Level achievements. This granted me a small financial bursary each year I achieved a grade of 2:1 or above.
+                        I was accepted into the University of Kent in 2013 with the Kent Scholarship for Academic Excellence, which was awarded to me based on my A-Level achievements. This granted me a small financial bursary each year I achieved a grade of 2:1 or above.
                     </p>
                     <ul class = "qualification_list">
                         <li>MSc Advanced Computer Science</li>

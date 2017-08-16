@@ -11,14 +11,14 @@ padding:0;
 
 div.content{
     margin: auto;
-    width: 50%;
+    width: 60%;
 }
 
 div.topnav{
     z-index: -1;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     div.content {
         width:70%;
     }
@@ -28,24 +28,6 @@ div.topnav{
     div.profile_div{
     padding-bottom: 0;
     }
-}
-
-
-@media screen and (max-width: 1000px) {
-    div.content {
-        width:74%;
-    }
-    #about_me_pics{
-        width: 95%;
-    }
-    div.profile_div{
-    padding-bottom: 0;
-    }
-    span.profile_pic{
-    background-size: 12em;
-    padding: 4em;
-    }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -79,10 +61,10 @@ div.banner_home{
     background-image: linear-gradient(
       rgba(255, 0, 0, 0.15), 
       rgba(255, 255, 255, 0.85)
-    ), url("../images/tarantula_nebula-min.jpg");
+    ), url("../images/tarantula_nebula.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5.2em;
+    padding: 7.5em;
     text-align: center;
 }
 
@@ -93,7 +75,7 @@ div.banner_blog{
     ), url("../images/cs3.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5.2em;
+    padding: 7.5em;
     text-align: center;
 }
 
@@ -101,10 +83,10 @@ div.banner_projects{
     background-image: linear-gradient(
       rgba(60, 0, 250, 0.15), 
       rgba(255, 255, 255, 0.85)
-    ), url("../images/arduino_bg.png");
+    ), url("../images/arduino_bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5.2em;
+    padding: 7.5em;
     text-align: center;
 }
 
@@ -115,7 +97,7 @@ div.banner_cv{
     ), url("../images/cs2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5.2em;
+    padding: 7.5em;
     text-align: center;
 }
 
@@ -126,7 +108,7 @@ div.banner_about{
     ), url("../images/guitar_banner.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5.2em;
+    padding: 7.5em;
     text-align: center;
 }
 
@@ -201,7 +183,7 @@ span.profile_pic{
     background-size: 9.2em;
     padding: 4em;
     border-radius: 50%;
-    border: 0.5em solid #FFFFFF;
+    box-shadow: 0 0 0 0.5em white;
     background-position: center;
 }
 
@@ -262,8 +244,8 @@ h1.title{
 
 span.typing_text{
     font-family: Roboto-Light;
-    font-size: 1.4em;
-    padding: 4em;
+    font-size: 2em;
+    padding: 1.5em;
     color: #FFFFFF;
     font-style: italic;
 }

@@ -1,3 +1,5 @@
+@font-face { font-family: Roboto-Regular; src: url('../fonts/Roboto_Slab/RobotoSlab-Regular.ttf'); } 
+
 div.copyright_label_wrapper{
   bottom: 0;
   margin: auto;
@@ -8,7 +10,7 @@ div.copyright_label_wrapper{
 }
 
 div.copyright_label_wrapper p{
-  font-family: Glegoo;
+  font-family: Roboto-Regular;
   color: #2f416a;
   opacity: 0.2;
   font-size: 0.9em;
