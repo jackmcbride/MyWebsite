@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     You can reach me through my either my personal & academic email accounts:
                 <div class = "contact_field">
                     <p class = "intro_body">
-                        Academic Email:  <a class="text_links" href = "mailto:jlgm2@kent.ac.uk">jlgm2@kent.ac.uk</a><br>
+                        Academic Email:  <a class="text_links" href = "mailto:jlgm2@kent.ac.uk">jlgm2@kent.ac.uk</a><br><br>
                         Personal Email:  <a class="text_links" href = "mailto:warauthor@gmail.com">warauthor@gmail.com</a> 
                     </p>
                 </div>

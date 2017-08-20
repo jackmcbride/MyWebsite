@@ -20,19 +20,16 @@ div.topnav{
 
 @media screen and (min-width: 600px) {
     div.content {
-        width:70%;
+        width:78%;
     }
     #about_me_pics{
         width: 95%;
-    }
-    div.profile_div{
-    padding-bottom: 0;
     }
 }
 
 @media screen and (min-width: 1000px) {
     div.content {
-        width:60%;
+        width:75%;
     }
     #about_me_pics{
         width: 80%;
@@ -83,7 +80,7 @@ div.banner_projects{
     background-image: linear-gradient(
       rgba(60, 0, 250, 0.15), 
       rgba(255, 255, 255, 0.85)
-    ), url("../images/arduino_bg.jpg");
+    ), url("../images/arduino_bg2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 7.5em;
@@ -94,7 +91,7 @@ div.banner_cv{
     background-image: linear-gradient(
       rgba(60, 0, 250, 0.15), 
       rgba(255, 255, 255, 0.85)
-    ), url("../images/cs2.jpg");
+    ), url("../images/cs.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 7.5em;
@@ -127,9 +124,9 @@ ul.msc_modules{
     font-family: Roboto-Regular;
     color: #2f416a;
     padding: 0.1em;
-    font-size: 0.75em;
+    font-size: 0.8em;
+    opacity: 0.5;
     font-style: italic;
-    opacity: 0.8;
 }
 
 ::-webkit-scrollbar { 
@@ -164,7 +161,7 @@ p.intro_body{
 }
 
 .btn_primary:hover{
-    background-color: #3580d6
+    opacity: 0.5;
 }
 
 div.cv_div{
@@ -173,15 +170,17 @@ div.cv_div{
 
 div.profile_div{
     text-align: center;
-    padding: 1.3em;
-    padding-bottom: 4em;
+    padding: 3%;
+    padding-bottom: 10%;
 }
 
 span.profile_pic{
     background-image: url('../images/me_profile_pic_2.jpg');
     background-repeat: no-repeat;
-    background-size: 9.2em;
-    padding: 4em;
+    background-size: 9.5em;
+    max-width:100%;
+    height:auto;
+    padding: 4.1em;
     border-radius: 50%;
     box-shadow: 0 0 0 0.5em white;
     background-position: center;

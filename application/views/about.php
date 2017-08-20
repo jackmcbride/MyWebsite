@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p class = "intro_body">
                     I help contribute towards projects run by non-profit organisations such as <a class = "text_links" href = "https://www.torproject.org/"> The Tor Project.</a>
                 <p class = "intro_body">
-                    To help contribute, I recently began running two Raspberry Pi 3 devices as non-exit relay nodes, which are used in forming circuits of relay nodes for secure, encrypted connections to be made. So far, it's been a great learning experience, and I would recommend it to anyone with a computer to spare! To monitor the performance of my nodes, check out their Atlas stats<a class = "text_links" href = "https://atlas.torproject.org/#details/344CF5BC2963AF2EEC5437F7B2DD83498E7EE5A4"> here.</a>
+                    To help contribute, I recently began running two Raspberry Pi 3 devices as non-exit relay nodes, as well as a VPS based relay node which I'm hosting with OVH. So far, it's been a great learning experience, and I would recommend it to anyone with a computer to spare! To monitor the performance of my nodes, check out their Atlas stats<a class = "text_links" href = "https://atlas.torproject.org/#details/344CF5BC2963AF2EEC5437F7B2DD83498E7EE5A4"> here.</a>
                 </p>
                 <p class = "intro_body">
                     To find out more, contact me on social media or drop me an email!
